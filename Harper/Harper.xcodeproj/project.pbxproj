@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10323BA4250636CA00433F73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10323BA3250636C900433F73 /* GoogleService-Info.plist */; };
+		1063C2042508DC330007CC5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1063C2032508DC330007CC5C /* GoogleService-Info.plist */; };
 		10DDEC352506318C00D12699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DDEC342506318C00D12699 /* AppDelegate.swift */; };
 		10DDEC372506318C00D12699 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DDEC362506318C00D12699 /* SceneDelegate.swift */; };
 		10DDEC392506318C00D12699 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DDEC382506318C00D12699 /* ViewController.swift */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		10323BA3250636C900433F73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1063C2032508DC330007CC5C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		10DDEC312506318C00D12699 /* Harper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DDEC342506318C00D12699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10DDEC362506318C00D12699 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 				10DDEC3D2506318D00D12699 /* Assets.xcassets */,
 				10DDEC3F2506318D00D12699 /* LaunchScreen.storyboard */,
 				10DDEC422506318D00D12699 /* Info.plist */,
-				10323BA3250636C900433F73 /* GoogleService-Info.plist */,
+				1063C2032508DC330007CC5C /* GoogleService-Info.plist */,
 			);
 			path = Harper;
 			sourceTree = "<group>";
@@ -154,7 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10DDEC412506318D00D12699 /* LaunchScreen.storyboard in Resources */,
-				10323BA4250636CA00433F73 /* GoogleService-Info.plist in Resources */,
+				1063C2042508DC330007CC5C /* GoogleService-Info.plist in Resources */,
 				10DDEC3E2506318D00D12699 /* Assets.xcassets in Resources */,
 				10DDEC3C2506318C00D12699 /* Main.storyboard in Resources */,
 			);
