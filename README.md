@@ -7,6 +7,7 @@
 
 An AI Based Music Player that automatically downloads music as per the interest of the user.
 
+## Info
 
-
-
+This repository contains only the Swift Project.
+There is another repository for Java Project.
