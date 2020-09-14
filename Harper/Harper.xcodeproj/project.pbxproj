@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10554E42250F71D700FB3B8F /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10554E41250F71D700FB3B8F /* RegistrationViewController.swift */; };
 		1063C2042508DC330007CC5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1063C2032508DC330007CC5C /* GoogleService-Info.plist */; };
 		10DDEC352506318C00D12699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DDEC342506318C00D12699 /* AppDelegate.swift */; };
 		10DDEC372506318C00D12699 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DDEC362506318C00D12699 /* SceneDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10554E41250F71D700FB3B8F /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		1063C2032508DC330007CC5C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		10DDEC312506318C00D12699 /* Harper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DDEC342506318C00D12699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			children = (
 				10DDEC342506318C00D12699 /* AppDelegate.swift */,
 				10DDEC362506318C00D12699 /* SceneDelegate.swift */,
+				10554E41250F71D700FB3B8F /* RegistrationViewController.swift */,
 				10DDEC382506318C00D12699 /* ViewController.swift */,
 				10DDEC3A2506318C00D12699 /* Main.storyboard */,
 				10DDEC3D2506318D00D12699 /* Assets.xcassets */,
@@ -194,6 +197,7 @@
 			files = (
 				10DDEC392506318C00D12699 /* ViewController.swift in Sources */,
 				10DDEC352506318C00D12699 /* AppDelegate.swift in Sources */,
+				10554E42250F71D700FB3B8F /* RegistrationViewController.swift in Sources */,
 				10DDEC372506318C00D12699 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
