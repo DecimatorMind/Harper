@@ -51,5 +51,10 @@ class ViewController: UIViewController {
             toastLabel.removeFromSuperview()
         })
     }
+    
+    @IBAction func ToRegister(_ sender: UIButton) {
+        
+    }
+    
 }
 
