@@ -62,6 +62,7 @@
                     <connections>
                         <outlet property="User_email" destination="rwM-DP-6Ge" id="evm-n6-iok"/>
                         <outlet property="User_password" destination="23N-8e-gIO" id="rsR-kg-fns"/>
+                        <segue destination="GUf-sd-Mex" kind="presentation" identifier="LoginToMainActivity" modalPresentationStyle="fullScreen" id="b33-8n-Kcu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -119,13 +120,33 @@
                         <outlet property="ConfirmingPassword" destination="MGA-FH-6f2" id="oyi-G5-33g"/>
                         <outlet property="RegistrationEmail" destination="eXx-il-MHL" id="zHC-gJ-7qa"/>
                         <outlet property="RegistrationPassword" destination="boY-Um-57v" id="vEG-uy-wPq"/>
+                        <segue destination="GUf-sd-Mex" kind="presentation" identifier="RegistrationToMainActivity" modalPresentationStyle="fullScreen" id="71d-Z8-AD0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFc-A0-D4z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1169.5652173913045" y="101.78571428571428"/>
+            <point key="canvasLocation" x="132" y="834"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="z3l-H1-wfO">
+            <objects>
+                <viewController id="GUf-sd-Mex" customClass="MainViewController" customModule="Harper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FYJ-mT-iLj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Atz-uv-m2X"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RAw-dt-pOY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YvM-9x-c8t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1568" y="438"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="71d-Z8-AD0"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Icon" width="908" height="932"/>
         <image name="Login Background" width="591" height="1280"/>
