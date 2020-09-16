@@ -23,7 +23,7 @@ class ViewController: UIViewController {
             if let password = User_password.text{
                 Auth.auth().signIn(withEmail: email, password: password) {authResult, error in
                     if(error == nil){
-                        print("Yes Authentication Successful")
+                        self.performSegue(withIdentifier: "LoginToMainActivity", sender: nil)
                     } else {
                         print(error!)
                         self.showToast(message: "Auth. Failed", font: .systemFont(ofSize: 17.0))
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func ToRegister(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: "ToRegistrationPage", sender: self)
     }
     
 }
