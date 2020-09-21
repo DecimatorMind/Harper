@@ -25,7 +25,7 @@ class DestinationViewController: UIViewController{
                 if let confirmingpass = ConfirmingPassword.text{
                     if password == confirmingpass{
                         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-                            if(error != nil){
+                            if(error == nil){
                                 self.performSegue(withIdentifier: "RegistrationToMainActivity", sender: nil)
                             } else {
                                 self.showToast(message: "Reg. Failed", font: .systemFont(ofSize: 17.0))
