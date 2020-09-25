@@ -14,4 +14,4 @@ In this week we worked on the Registration page and registering new users to the
 
 ## Week-4
 
-In this week we worked on the MainActivity and started off with the backend database connection.
+In this week we worked on the MainActivity and started off with the backend database connection. In order to use the main activity we had to first connect it to the backend local database. Therefore we have made the UI of the main activity and connected to the other activities as well as the backend database, so that the music can be played using the main activity.
