@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class DestinationViewController: UIViewController{
+class RegistrationViewController: UIViewController{
     
     @IBOutlet weak var RegistrationEmail: UITextField!
     @IBOutlet weak var RegistrationPassword: UITextField!
