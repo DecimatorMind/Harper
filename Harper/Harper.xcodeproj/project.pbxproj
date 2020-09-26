@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1027EB57251FC906006BFBC6 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027EB56251FC906006BFBC6 /* ListViewController.swift */; };
 		10554E42250F71D700FB3B8F /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10554E41250F71D700FB3B8F /* RegistrationViewController.swift */; };
 		1063C2042508DC330007CC5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1063C2032508DC330007CC5C /* GoogleService-Info.plist */; };
 		10A68AF02512144300419978 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A68AEF2512144300419978 /* MainViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1027EB56251FC906006BFBC6 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		10554E41250F71D700FB3B8F /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		1063C2032508DC330007CC5C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		10A68AEF2512144300419978 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			children = (
 				10DDEC342506318C00D12699 /* AppDelegate.swift */,
 				10DDEC362506318C00D12699 /* SceneDelegate.swift */,
+				1027EB56251FC906006BFBC6 /* ListViewController.swift */,
 				10A68AEF2512144300419978 /* MainViewController.swift */,
 				10554E41250F71D700FB3B8F /* RegistrationViewController.swift */,
 				10DDEC382506318C00D12699 /* ViewController.swift */,
@@ -200,6 +203,7 @@
 			files = (
 				10DDEC392506318C00D12699 /* ViewController.swift in Sources */,
 				10DDEC352506318C00D12699 /* AppDelegate.swift in Sources */,
+				1027EB57251FC906006BFBC6 /* ListViewController.swift in Sources */,
 				10554E42250F71D700FB3B8F /* RegistrationViewController.swift in Sources */,
 				10DDEC372506318C00D12699 /* SceneDelegate.swift in Sources */,
 				10A68AF02512144300419978 /* MainViewController.swift in Sources */,
