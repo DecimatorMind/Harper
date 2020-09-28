@@ -8,13 +8,35 @@
 
 import UIKit
 import Firebase
+import AVFoundation
 
 class MainViewController: UIViewController{
     @IBOutlet weak var Cover_Art: UIImageView!
     @IBOutlet weak var Song_Title: UITextView!
     @IBOutlet weak var Artist: UITextView!
     
+    var SongPlayer = AVAudioPlayer()
+    var flag = 0
+    
     @IBAction func Play(_ sender: UIButton) {
+        let path = Bundle.main.path(forResource: "abcd", ofType: "mp3")!
+        let url = URL(fileURLWithPath: path)
+        do{
+            SongPlayer = try AVAudioPlayer(contentsOf: url)
+        } catch{
+            print("Error found")
+        }
+        SongPlayer.prepareToPlay()
+        if(flag == 1){
+            sender.setImage(UIImage.init(imageLiteralResourceName: "Play"), for: UIControl.State.normal)
+            SongPlayer.pause()
+            flag = -1
+        } else {
+            sender.setImage(UIImage.init(imageLiteralResourceName: "Pause"), for: UIControl.State.normal)
+            
+            SongPlayer.play()
+            flag = 1
+        }
     }
     
     @IBAction func Next(_ sender: UIButton) {
@@ -27,6 +49,10 @@ class MainViewController: UIViewController{
     }
     
     @IBAction func ToMenu(_ sender: UIButton) {
+        performSegue(withIdentifier: "ToListView", sender: nil)
+    }
+    
+    @IBAction func TmeSlider(_ sender: UISlider) {
     }
     
 }
