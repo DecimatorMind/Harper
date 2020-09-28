@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GUf-sd-Mex">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -212,6 +212,9 @@
                                 <rect key="frame" x="54" y="616" width="308" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="TmeSlider:" destination="GUf-sd-Mex" eventType="valueChanged" id="uHN-VG-RaZ"/>
+                                </connections>
                             </slider>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cover Photo" translatesAutoresizingMaskIntoConstraints="NO" id="trq-EW-om7">
                                 <rect key="frame" x="108" y="293" width="198" height="186"/>
@@ -225,7 +228,7 @@
                         <outlet property="Artist" destination="Bzm-Fp-Mqu" id="bYk-B1-Vp4"/>
                         <outlet property="Cover_Art" destination="trq-EW-om7" id="9jR-9t-Oq3"/>
                         <outlet property="Song_Title" destination="aJk-HI-e5b" id="U3X-fd-aww"/>
-                        <segue destination="j7B-Sq-aY8" kind="presentation" id="jn4-qx-hig"/>
+                        <segue destination="j7B-Sq-aY8" kind="presentation" identifier="ToListView" id="jn4-qx-hig"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YvM-9x-c8t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
