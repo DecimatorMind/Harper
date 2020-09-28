@@ -18,4 +18,4 @@ In this week we worked on the MainActivity and started off with the backend data
 
 ## Week-5
 
-By the end of this week, the Music Player would be functional, but the data will have to be copied to the project rather than using the database.
+By the end of this week, the Music Player would be functional, but the data will have to be copied to the project rather than using the database. This week we will complete the basic functionality of the music player with some additional features like background play, pause, Image Switch, SeekBar Functionality, Current Time, Duration calculation and many other small details that are very important to be implemented before we start making the database. After the Music Player will be completed, we will work on the Backend of the application that is the local database.
