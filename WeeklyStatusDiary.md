@@ -6,7 +6,7 @@ We have firstly researched different websites for good UI Mockups that are avail
 
 ## Week-2
 
-Using the UI-UX Mockups made last week, we made the Xcode and Android Studio projects. Before starting working on the projects, we first discussed about the method to be used in the login and registratio of the user (Authentication). We decided to use Email Authentication using Firebase API, which will allow us to store the email and password for future API queries. Then we started working on the projects. The first step was to make the UI Login Design in the IDE. Therefore we made the login page as per the mockup and added the login functionalities. By the end of the week, it was visible if the user could login or not.
+Using the UI-UX Mockups made last week, we made the Xcode and Android Studio projects. Before starting working on the projects, we first discussed about the method to be used in the login and registration of the user (Authentication). We decided to use Email Authentication using Firebase API, which will allow us to store the email and password for future API queries. Then we started working on the projects. The first step was to make the UI Login Design in the IDE. Therefore we made the login page as per the mockup and added the login functionalities. By the end of the week, it was visible if the user could login or not.
 
 ## Week-3
 
