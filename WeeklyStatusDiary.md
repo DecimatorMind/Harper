@@ -16,6 +16,8 @@ In this week we worked on the Registration page and registering new users to the
 
 In this week we worked on the MainActivity and started off with the backend database connection. In order to use the main activity we had to first connect it to the backend local database. Therefore we have made the UI of the main activity and connected to the other activities as well as the backend database, so that the music can be played using the main activity. We have used SQLite for the backend database, where the local songs are stored. The SQLite has to be connected first to the backend database for the intial UI testing. The functioning of the Main Activity will take much more time than we thought, therefore we had to skip the integration of backend database.
 
+# October
+
 ## Week-5
 
-By the end of this week, the Music Player would be functional, but the data will have to be copied to the project rather than using the database. This week we will complete the basic functionality of the music player with some additional features like background play, pause, Image Switch, SeekBar Functionality, Current Time, Duration calculation and many other small details that are very important to be implemented before we start making the database. After the Music Player will be completed, we will work on the Backend of the application that is the local database.
+By the end of this week, the Music Player would be functional, but the data will have to be copied to the project rather than using the database. This week we will complete the basic functionality of the music player with some additional features like background play, pause, Image Switch, SeekBar Functionality, Current Time, Duration calculation and many other small details that are very important to be implemented before we start making the database. After the Music Player is completed, we will work on the Backend of the application that is the local database.
