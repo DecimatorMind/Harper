@@ -14,18 +14,29 @@ class MainViewController: UIViewController{
     @IBOutlet weak var Cover_Art: UIImageView!
     @IBOutlet weak var Song_Title: UITextView!
     @IBOutlet weak var Artist: UITextView!
+    @IBOutlet weak var EndTime: UILabel!
     
     var SongPlayer = AVAudioPlayer()
+    
+    @IBAction func TmeSlider(_ sender: UISlider) {
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+            
+        check()
+        EndTime.text = String(format: "%.2f",SongPlayer.duration/60)
+        print(time)
+    }
+    
     var flag = 0
     var mark = 0
     @IBAction func Play(_ sender: UIButton) {
-        if(mark == 0){
-            check()
-            mark = 1
-        }
         if(flag == 1){
             sender.setImage(UIImage.init(imageLiteralResourceName: "Play"), for: UIControl.State.normal)
             SongPlayer.pause()
+            print(SongPlayer.currentTime/60)
             flag = -1
         } else {
             sender.setImage(UIImage.init(imageLiteralResourceName: "Pause"), for: UIControl.State.normal)
@@ -57,9 +68,5 @@ class MainViewController: UIViewController{
     @IBAction func ToMenu(_ sender: UIButton) {
         performSegue(withIdentifier: "ToListView", sender: nil)
     }
-    
-    @IBAction func TmeSlider(_ sender: UISlider) {
-    }
-    
 }
 
