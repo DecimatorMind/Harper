@@ -17,8 +17,24 @@ class MainViewController: UIViewController{
     
     var SongPlayer = AVAudioPlayer()
     var flag = 0
-    
+    var mark = 0
     @IBAction func Play(_ sender: UIButton) {
+        if(mark == 0){
+            check()
+            mark = 1
+        }
+        if(flag == 1){
+            sender.setImage(UIImage.init(imageLiteralResourceName: "Play"), for: UIControl.State.normal)
+            SongPlayer.pause()
+            flag = -1
+        } else {
+            sender.setImage(UIImage.init(imageLiteralResourceName: "Pause"), for: UIControl.State.normal)
+            SongPlayer.play()
+            flag = 1
+        }
+    }
+    
+    func check(){
         let path = Bundle.main.path(forResource: "abcd", ofType: "mp3")!
         let url = URL(fileURLWithPath: path)
         do{
@@ -27,16 +43,6 @@ class MainViewController: UIViewController{
             print("Error found")
         }
         SongPlayer.prepareToPlay()
-        if(flag == 1){
-            sender.setImage(UIImage.init(imageLiteralResourceName: "Play"), for: UIControl.State.normal)
-            SongPlayer.pause()
-            flag = -1
-        } else {
-            sender.setImage(UIImage.init(imageLiteralResourceName: "Pause"), for: UIControl.State.normal)
-            
-            SongPlayer.play()
-            flag = 1
-        }
     }
     
     @IBAction func Next(_ sender: UIButton) {
@@ -56,3 +62,4 @@ class MainViewController: UIViewController{
     }
     
 }
+
