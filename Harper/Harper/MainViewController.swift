@@ -17,9 +17,11 @@ class MainViewController: UIViewController{
     @IBOutlet weak var EndTime: UILabel!
     
     var SongPlayer = AVAudioPlayer()
+    @IBOutlet weak var Slider: UISlider!
     
-    @IBAction func TmeSlider(_ sender: UISlider) {
-        
+    @IBAction func TimeSlider(_ sender: UISlider){
+        SongPlayer.currentTime = TimeInterval(Slider.value)
+        SongPlayer.play()
     }
     
     override func viewDidLoad() {
@@ -27,7 +29,8 @@ class MainViewController: UIViewController{
             
         check()
         EndTime.text = String(format: "%.2f",SongPlayer.duration/60)
-        print(time)
+        Slider.maximumValue  = Float(TimeInterval(SongPlayer.duration))
+        
     }
     
     var flag = 0
@@ -54,6 +57,12 @@ class MainViewController: UIViewController{
             print("Error found")
         }
         SongPlayer.prepareToPlay()
+        let AudioSession = AVAudioSession.sharedInstance()
+        do{
+            try AudioSession.setCategory(AVAudioSession.Category.playback)
+        } catch {
+            print(error)
+        }
     }
     
     @IBAction func Next(_ sender: UIButton) {
@@ -67,6 +76,10 @@ class MainViewController: UIViewController{
     
     @IBAction func ToMenu(_ sender: UIButton) {
         performSegue(withIdentifier: "ToListView", sender: nil)
+    }
+    
+    func UpdateSlider(){
+        Slider.value = Float(SongPlayer.currentTime)
     }
 }
 
