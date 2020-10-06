@@ -15,8 +15,6 @@ class MainViewController: UIViewController{
     @IBOutlet weak var Song_Title: UITextView!
     @IBOutlet weak var Artist: UITextView!
     @IBOutlet weak var EndTime: UILabel!
-    
-    var SongPlayer = AVAudioPlayer()
     @IBOutlet weak var Slider: UISlider!
     
     @IBAction func TimeSlider(_ sender: UISlider){
@@ -24,22 +22,26 @@ class MainViewController: UIViewController{
         SongPlayer.play()
     }
     
+    var SongPlayer = AVAudioPlayer()
+    let ArtistName = ["Weeknd","Don Toliver","Travis Scott","Travis Scott"]
+    let SongTitles = ["Starboy","No Idea","Out West","Franchise"]
+    let SongName = ["1","2","3","4"]
+    var lastPlayedIndex = 0
+    var flag = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
             
-        check()
+        ReadyPlayer(temp: SongName[lastPlayedIndex])
         EndTime.text = String(format: "%.2f",SongPlayer.duration/60)
         Slider.maximumValue  = Float(TimeInterval(SongPlayer.duration))
         
     }
     
-    var flag = 0
-    var mark = 0
     @IBAction func Play(_ sender: UIButton) {
         if(flag == 1){
             sender.setImage(UIImage.init(imageLiteralResourceName: "Play"), for: UIControl.State.normal)
             SongPlayer.pause()
-            print(SongPlayer.currentTime/60)
             flag = -1
         } else {
             sender.setImage(UIImage.init(imageLiteralResourceName: "Pause"), for: UIControl.State.normal)
@@ -48,8 +50,8 @@ class MainViewController: UIViewController{
         }
     }
     
-    func check(){
-        let path = Bundle.main.path(forResource: "abcd", ofType: "mp3")!
+    func ReadyPlayer(temp: String){
+        let path = Bundle.main.path(forResource: temp, ofType: "mp3")!
         let url = URL(fileURLWithPath: path)
         do{
             SongPlayer = try AVAudioPlayer(contentsOf: url)
@@ -66,9 +68,17 @@ class MainViewController: UIViewController{
     }
     
     @IBAction func Next(_ sender: UIButton) {
+        ReadyPlayer(temp: SongName[lastPlayedIndex + 1])
+        lastPlayedIndex += 1
+        UpdateData()
+        SongPlayer.play()
     }
     
     @IBAction func Previous(_ sender: UIButton) {
+        ReadyPlayer(temp: SongName[lastPlayedIndex - 1])
+        lastPlayedIndex -= 1
+        UpdateData()
+        SongPlayer.play()
     }
     
     @IBAction func Like(_ sender: UIButton) {
@@ -80,6 +90,12 @@ class MainViewController: UIViewController{
     
     func UpdateSlider(){
         Slider.value = Float(SongPlayer.currentTime)
+    }
+    
+    func UpdateData(){
+        Artist.text = ArtistName[lastPlayedIndex]
+        Song_Title.text = SongTitles[lastPlayedIndex]
+        EndTime.text = String(format: "%.2f",SongPlayer.duration/60)
     }
 }
 
