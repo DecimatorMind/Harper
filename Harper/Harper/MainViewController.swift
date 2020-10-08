@@ -17,11 +17,6 @@ class MainViewController: UIViewController{
     @IBOutlet weak var EndTime: UILabel!
     @IBOutlet weak var Slider: UISlider!
     
-    @IBAction func TimeSlider(_ sender: UISlider){
-        SongPlayer.currentTime = TimeInterval(Slider.value)
-        SongPlayer.play()
-    }
-    
     var SongPlayer = AVAudioPlayer()
     let ArtistName = ["Weeknd","Don Toliver","Travis Scott","Travis Scott"]
     let SongTitles = ["Starboy","No Idea","Out West","Franchise"]
@@ -31,7 +26,7 @@ class MainViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            
+        
         ReadyPlayer(temp: SongName[lastPlayedIndex])
         EndTime.text = String(format: "%.2f",SongPlayer.duration/60)
         Slider.maximumValue  = Float(TimeInterval(SongPlayer.duration))
@@ -81,6 +76,11 @@ class MainViewController: UIViewController{
         SongPlayer.play()
     }
     
+    @IBAction func TimeSlider(_ sender: UISlider){
+        SongPlayer.currentTime = TimeInterval(Slider.value)
+        SongPlayer.play()
+    }
+    
     @IBAction func Like(_ sender: UIButton) {
     }
     
@@ -88,13 +88,10 @@ class MainViewController: UIViewController{
         performSegue(withIdentifier: "ToListView", sender: nil)
     }
     
-    func UpdateSlider(){
-        Slider.value = Float(SongPlayer.currentTime)
-    }
-    
     func UpdateData(){
         Artist.text = ArtistName[lastPlayedIndex]
         Song_Title.text = SongTitles[lastPlayedIndex]
+        Slider.value = 0
         EndTime.text = String(format: "%.2f",SongPlayer.duration/60)
     }
 }
