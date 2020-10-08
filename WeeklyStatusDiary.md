@@ -24,4 +24,4 @@ This week we worked on the Music Player that would be functional, but the song d
 
 ## Week-6
 
-Starting the work on the Database (Backend) in order to achieve all functionalities of the player. This week the work was postponed to next week due to the mid term examination.
+Starting the work on the Database (Backend) in order to achieve all functionalities of the player. This week the work was postponed to next week due to the mid term examination.Although a few code updates will be done this week, but those would to increase the readability and efficiency and to reduce the redundancy in the code.
