@@ -13,3 +13,9 @@ https://app.moqups.com/o6BDLvhuem/edit/page/a88be41aa
 https://www.vectorstock.com/royalty-free-vector/liquid-background-best-music-player-ui-ux-gui-vector-25958868
 
 https://www.flaticon.com
+
+# Apple Developers Reference
+
+https://developer.apple.com/av-foundation/
+
+https://developer.apple.com/library/archive/samplecode/AVFoundationSimplePlayer-iOS/Introduction/Intro.html
