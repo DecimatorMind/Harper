@@ -19,3 +19,5 @@ https://www.flaticon.com
 https://developer.apple.com/av-foundation/
 
 https://developer.apple.com/library/archive/samplecode/AVFoundationSimplePlayer-iOS/Introduction/Intro.html
+
+https://developer.apple.com/documentation/avfoundation
