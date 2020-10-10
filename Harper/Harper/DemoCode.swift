@@ -7,6 +7,10 @@
 //
 
 import Foundation
+
+// Demo Code from Stack Overflow
+
+
 //func keepTrackOfAudio() {
 //    audioPlayer?.addObserver(self, forKeyPath: "currentItem.loadedTimeRanges", options: .new, context: nil)
 //
@@ -31,6 +35,11 @@ import Foundation
 //
 //}
 //
+
+
+// Slider Timer Update
+
+
 //override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
 //
 //
