@@ -5,6 +5,8 @@
 ![](https://img.shields.io/badge/IDE-Android_Studio-green)
 ![](https://img.shields.io/badge/IDE-Xcode-blue)
 
+Music is everywhere, Good Music isn't.
+
 An AI Based Music Player that automatically downloads music as per the interest of the user.
 
 ## Info
