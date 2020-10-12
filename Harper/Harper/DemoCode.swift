@@ -54,6 +54,7 @@ import Foundation
 //    }
 //}
 
+// Timer function to mark the time of the slider
 
 //Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateAudioProgressView), userInfo: nil, repeats: true)
 //  progressView.setProgress(Float(audioPlayer.currentTime/audioPlayer.duration), animated: false)
