@@ -58,3 +58,10 @@ import Foundation
 
 //Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateAudioProgressView), userInfo: nil, repeats: true)
 //  progressView.setProgress(Float(audioPlayer.currentTime/audioPlayer.duration), animated: false)
+
+
+// Pandora Player Code Bit
+
+//let seconds = Float(CMTimeGetSeconds(time))
+//        self.sliderView.duration = duration
+//        self.sliderView.progress = seconds / Float(duration)
