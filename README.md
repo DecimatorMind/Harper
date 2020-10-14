@@ -21,6 +21,6 @@ In Xcode, open the project Workspace Harper.
 Connect your iOS Device and start the project.
 The application would start working on the connected device.
 
-# Pods
+## Pods
 
 Firebase Auth
