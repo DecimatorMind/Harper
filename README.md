@@ -20,3 +20,7 @@ To run this project, just clone the repository and open Xcode.
 In Xcode, open the project Workspace Harper.
 Connect your iOS Device and start the project.
 The application would start working on the connected device.
+
+# Pods
+
+Firebase Auth
