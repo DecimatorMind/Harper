@@ -67,7 +67,7 @@ class MainViewController: UIViewController{
         Slider.maximumValue  = Float(TimeInterval(SongPlayer.duration))
     }
     
-    @IBAction func Next(_ sender: UIButton) {
+    @IBAction func Next(_ sender: UIButton? = nil) {
         ReadyPlayer(temp: SongName[lastPlayedIndex + 1])
         lastPlayedIndex += 1
         UpdateData()
@@ -116,6 +116,9 @@ class MainViewController: UIViewController{
         Slider.value = CFloat(SongPlayer.currentTime)
         let time = calculateTimeFromNSTimeInterval(SongPlayer.currentTime)
         CurrentTime.text = "\(time.minute).\(time.second)"
+        if (Int(SongPlayer.currentTime) == Int(SongPlayer.duration)-1){
+            self.Next(nil)
+        }
     }
     
     func calculateTimeFromNSTimeInterval(_ duration:TimeInterval) ->(minute:String, second:String){
