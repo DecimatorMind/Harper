@@ -220,15 +220,15 @@
                                 <rect key="frame" x="108" y="293" width="198" height="186"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEz-Y0-1PW">
-                                <rect key="frame" x="39" y="639" width="24" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEz-Y0-1PW">
+                                <rect key="frame" x="20" y="638" width="39" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3:20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8A-hq-zqv">
-                                <rect key="frame" x="341" y="639" width="45" height="21"/>
+                                <rect key="frame" x="368" y="638" width="45" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -241,6 +241,7 @@
                     <connections>
                         <outlet property="Artist" destination="Bzm-Fp-Mqu" id="bYk-B1-Vp4"/>
                         <outlet property="Cover_Art" destination="trq-EW-om7" id="9jR-9t-Oq3"/>
+                        <outlet property="CurrentTime" destination="zEz-Y0-1PW" id="Ifd-CJ-8ix"/>
                         <outlet property="EndTime" destination="h8A-hq-zqv" id="5fp-ua-qjF"/>
                         <outlet property="Slider" destination="hjF-OS-uXG" id="6nB-fu-5fp"/>
                         <outlet property="Song_Title" destination="aJk-HI-e5b" id="U3X-fd-aww"/>
