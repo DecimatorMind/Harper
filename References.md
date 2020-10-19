@@ -21,3 +21,7 @@ https://developer.apple.com/av-foundation/
 https://developer.apple.com/library/archive/samplecode/AVFoundationSimplePlayer-iOS/Introduction/Intro.html
 
 https://developer.apple.com/documentation/avfoundation
+
+# Github Code Reference
+
+https://github.com/bpolat/Music-Player/blob/master/Music%20Player/PlayerViewController.swift
