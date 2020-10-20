@@ -17,6 +17,8 @@ class MainViewController: UIViewController{
     @IBOutlet weak var CurrentTime: UILabel!
     @IBOutlet weak var EndTime: UILabel!
     @IBOutlet weak var Slider: UISlider!
+    @IBOutlet weak var LikeView: UIButton!
+    @IBOutlet weak var PlayView: UIButton!
     
     var SongPlayer = AVAudioPlayer()
     var timer = Timer()
@@ -86,7 +88,14 @@ class MainViewController: UIViewController{
         SongPlayer.play()
     }
     
-    @IBAction func Like(_ sender: UIButton) {
+    @IBAction func Like(_ sender: UIButton? = nil) {
+        if(Like[lastPlayedIndex] == 0){
+            Like[lastPlayedIndex] = 1
+            UpdateData()
+        } else {
+            Like[lastPlayedIndex] = 0
+            UpdateData()
+        }
     }
     
     @IBAction func ToMenu(_ sender: UIButton) {
@@ -94,6 +103,11 @@ class MainViewController: UIViewController{
     }
     
     func UpdateData(){
+        if(Like[lastPlayedIndex] == 0){
+            LikeView.setImage(UIImage.init(imageLiteralResourceName: "Dislike"), for: UIControl.State.normal)
+        } else {
+            LikeView.setImage(UIImage.init(imageLiteralResourceName: "Like"), for: UIControl.State.normal)
+        }
         Artist.text = ArtistName[lastPlayedIndex]
         Song_Title.text = SongTitles[lastPlayedIndex]
         Slider.value = 0
