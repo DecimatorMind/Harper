@@ -22,9 +22,9 @@ class MainViewController: UIViewController{
     var timer = Timer()
     let ArtistName = ["Weeknd","Don Toliver","Travis Scott","Travis Scott"]
     let SongTitles = ["Starboy","No Idea","Out West","Franchise"]
+    var Like = [0,1,0,1]
     let SongName = ["1","2","3","4"]
     var lastPlayedIndex = 0
-    var flag = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,16 +36,14 @@ class MainViewController: UIViewController{
     }
     
     @IBAction func Play(_ sender: UIButton) {
-        if(flag == 1){
+        if(SongPlayer.isPlaying){
             sender.setImage(UIImage.init(imageLiteralResourceName: "Play"), for: UIControl.State.normal)
             SongPlayer.pause()
             PauseTimer()
-            flag = -1
         } else {
             sender.setImage(UIImage.init(imageLiteralResourceName: "Pause"), for: UIControl.State.normal)
             SongPlayer.play()
             StartTimer()
-            flag = 1
         }
     }
     
