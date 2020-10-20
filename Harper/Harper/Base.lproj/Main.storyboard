@@ -179,7 +179,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ftv-jn-BKJ">
                                 <rect key="frame" x="20" y="510" width="62" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Like" image="Like button"/>
+                                <state key="normal" title="Like" image="Like"/>
                                 <connections>
                                     <action selector="Like:" destination="GUf-sd-Mex" eventType="touchUpInside" id="geh-Dw-5vL"/>
                                 </connections>
@@ -243,6 +243,8 @@
                         <outlet property="Cover_Art" destination="trq-EW-om7" id="9jR-9t-Oq3"/>
                         <outlet property="CurrentTime" destination="zEz-Y0-1PW" id="Ifd-CJ-8ix"/>
                         <outlet property="EndTime" destination="h8A-hq-zqv" id="5fp-ua-qjF"/>
+                        <outlet property="LikeView" destination="Ftv-jn-BKJ" id="T89-6q-IHm"/>
+                        <outlet property="PlayView" destination="pzB-mF-NWb" id="bQ1-1j-xRr"/>
                         <outlet property="Slider" destination="hjF-OS-uXG" id="6nB-fu-5fp"/>
                         <outlet property="Song_Title" destination="aJk-HI-e5b" id="U3X-fd-aww"/>
                         <segue destination="j7B-Sq-aY8" kind="presentation" identifier="ToListView" id="jn4-qx-hig"/>
@@ -289,7 +291,7 @@
         <image name="Background Layer" width="323" height="628"/>
         <image name="Cover Photo" width="300" height="300"/>
         <image name="Icon" width="908" height="932"/>
-        <image name="Like button" width="512" height="512"/>
+        <image name="Like" width="512" height="512"/>
         <image name="List View Button" width="384.97000122070312" height="384.97000122070312"/>
         <image name="Login Background" width="591" height="1280"/>
         <image name="Login Background 1" width="582" height="684"/>
