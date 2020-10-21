@@ -39,12 +39,12 @@ class MainViewController: UIViewController{
     
     @IBAction func Play(_ sender: UIButton) {
         if(SongPlayer.isPlaying){
-            sender.setImage(UIImage.init(imageLiteralResourceName: "Play"), for: UIControl.State.normal)
             SongPlayer.pause()
+            updatePlayView()
             PauseTimer()
         } else {
-            sender.setImage(UIImage.init(imageLiteralResourceName: "Pause"), for: UIControl.State.normal)
             SongPlayer.play()
+            updatePlayView()
             StartTimer()
         }
     }
@@ -72,6 +72,7 @@ class MainViewController: UIViewController{
         lastPlayedIndex += 1
         UpdateData()
         SongPlayer.play()
+        updatePlayView()
         StartTimer()
     }
     
@@ -80,6 +81,7 @@ class MainViewController: UIViewController{
         lastPlayedIndex -= 1
         UpdateData()
         SongPlayer.play()
+        updatePlayView()
         StartTimer()
     }
     
@@ -134,10 +136,18 @@ class MainViewController: UIViewController{
     }
     
     func calculateTimeFromNSTimeInterval(_ duration:TimeInterval) ->(minute:String, second:String){
-            let minute = abs(Int((duration/60).truncatingRemainder(dividingBy: 60)))
-            let second_ = abs(Int(duration.truncatingRemainder(dividingBy: 60)))
-            let second = second_ > 9 ? "\(second_)" : "0\(second_)"
-            return (String(minute),second)
+        let minute = abs(Int((duration/60).truncatingRemainder(dividingBy: 60)))
+        let second_ = abs(Int(duration.truncatingRemainder(dividingBy: 60)))
+        let second = second_ > 9 ? "\(second_)" : "0\(second_)"
+        return (String(minute),second)
+    }
+    
+    func updatePlayView(){
+        if(SongPlayer.isPlaying){
+            PlayView.setImage(UIImage.init(imageLiteralResourceName: "Pause"), for: UIControl.State.normal)
+        } else {
+            PlayView.setImage(UIImage.init(imageLiteralResourceName: "Play"), for: UIControl.State.normal)
         }
+    }
 }
 
