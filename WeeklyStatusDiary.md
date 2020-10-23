@@ -25,3 +25,7 @@ This week we worked on the Music Player that would be functional, but the song d
 ## Week-6
 
 Starting the work on the Database (Backend) in order to achieve all functionalities of the player. This week the work was postponed to next week due to the mid term examination.Although a few code updates will be done this week, but those would to increase the readability and efficiency and to reduce the redundancy in the code.
+
+## Week-7
+
+This week we started working on the connection to the Youtube API. Since the time to the evaluation is less, therefore rather than connecting permanent database to the application, we first wanna do the basic functions of the application. The data must be received and stored in the application. The permanent storage is not much important at this stage of the application. Although a big part of application includes storing into backend local database, but that part can be easily done once all the data can be retrieved. The data can be soon easily structured and stored to the local storage.
