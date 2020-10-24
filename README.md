@@ -24,3 +24,5 @@ The application would start working on the connected device.
 ## Pods
 
 Firebase Auth
+YoutubeDataKit
+(This is an experimental API that retirieves basic data)
