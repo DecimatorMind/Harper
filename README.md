@@ -14,6 +14,8 @@ An AI Based Music Player that automatically downloads music as per the interest 
 This repository contains only the Swift Project.
 There is another repository for Java Project.
 
+API_Connection branch was made in order to experiment with the various third party Pods that can replace the {Youtube API}
+
 ## How To Run
 
 To run this project, just clone the repository and open Xcode.
