@@ -1,0 +1,6 @@
+module YoutubeDataKit {
+  umbrella header "YoutubeDataKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
