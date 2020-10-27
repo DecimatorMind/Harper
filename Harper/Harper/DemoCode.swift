@@ -19,6 +19,25 @@ import Foundation
 //
 //import UIKit
 //import AVFoundation
+
+//MARK: - Terminal Commands
+
+//@discardableResult
+//func shell(_ args: String...) -> Int32 {
+//    let task = Process()
+//    task.launchPath = "/usr/bin/env"
+//    task.arguments = args
+//    task.launch()
+//    task.waitUntilExit()
+//    return task.terminationStatus
+//}
+//
+//shell("ls")
+//shell("xcodebuild", "-workspace", "myApp.xcworkspace")
+
+
+//MARK: - Seek Bar Control
+
 //
 //class ViewController: UIViewController {
 //
@@ -50,6 +69,9 @@ import Foundation
 //        }
 //        startTimer()
 //    }
+
+//MARK: - Pause Timer
+
 //
 //    func startTimer(){
 //        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(ViewController.update(_:)), userInfo: nil,repeats: true)
