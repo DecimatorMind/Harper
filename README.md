@@ -28,3 +28,5 @@ The application would start working on the connected device.
 Firebase Auth
 YoutubeDataKit
 (This is an experimental API that retirieves basic data)
+
+Since Youtube-dl repository has now been deleted, i will try using a different method to download mp3
