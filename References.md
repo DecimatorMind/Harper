@@ -25,3 +25,7 @@ https://developer.apple.com/documentation/avfoundation
 # Github Code Reference
 
 https://github.com/bpolat/Music-Player/blob/master/Music%20Player/PlayerViewController.swift
+
+# API References
+
+https://mobikul.com/play-audio-file-save-document-directory-ios-swift/
