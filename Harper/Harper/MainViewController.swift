@@ -64,25 +64,30 @@ class MainViewController: UIViewController{
         } catch {
             print(error)
         }
-        Slider.maximumValue  = Float(TimeInterval(SongPlayer.duration))
+        Slider.maximumValue = Float(TimeInterval(SongPlayer.duration))
     }
     
     @IBAction func Next(_ sender: UIButton? = nil) {
         ReadyPlayer(temp: SongName[lastPlayedIndex + 1])
-        lastPlayedIndex += 1
-        UpdateData()
-        SongPlayer.play()
-        updatePlayView()
-        StartTimer()
+        if(lastPlayedIndex != SongName.count-1){
+            lastPlayedIndex += 1
+            UpdateData()
+            SongPlayer.play()
+            updatePlayView()
+            StartTimer()
+        }
     }
     
     @IBAction func Previous(_ sender: UIButton) {
         ReadyPlayer(temp: SongName[lastPlayedIndex - 1])
-        lastPlayedIndex -= 1
-        UpdateData()
-        SongPlayer.play()
-        updatePlayView()
-        StartTimer()
+        if(lastPlayedIndex != 1){
+            lastPlayedIndex -= 1
+            UpdateData()
+            SongPlayer.play()
+            updatePlayView()
+            StartTimer()
+            
+        }
     }
     
     @IBAction func TimeSlider(_ sender: UISlider){
@@ -150,4 +155,3 @@ class MainViewController: UIViewController{
         }
     }
 }
-
