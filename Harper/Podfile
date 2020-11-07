@@ -5,6 +5,5 @@ target 'Harper' do
   # Pods for Harper
   
   pod 'Firebase/Auth'
-  pod 'MKYoutubeMp3Downloader'
 
 end

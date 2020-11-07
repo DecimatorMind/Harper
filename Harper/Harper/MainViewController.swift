@@ -9,7 +9,6 @@
 import UIKit
 import Firebase
 import AVFoundation
-import YoutubeDataKit
 
 class MainViewController: UIViewController{
     @IBOutlet weak var Cover_Art: UIImageView!
@@ -31,19 +30,6 @@ class MainViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Get youtube chart ranking
-        let request = VideoListRequest(part: [.snippet], filter: .chart)
-
-        // Send a request.
-        ApiSession.shared.send(request) { result in
-            switch result {
-            case .success(let response):
-                print(response)
-            case .failed(let error):
-                print(error)
-            }
-        }
         
         ReadyPlayer(temp: SongName[lastPlayedIndex])
         UpdateData()
