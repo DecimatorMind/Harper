@@ -11,6 +11,7 @@ import UIKit
 class SongListViewController: UIViewController {
     
     let SongTitles = ["Starboy","No Idea","Out West","Franchise"]
+    let ArtistName = ["Weeknd","Don Toliver","Travis Scott","Travis Scott"]
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -23,7 +24,7 @@ class SongListViewController: UIViewController {
 
 extension SongListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You tapped")
+        dismiss(animated: true, completion: nil)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
@@ -36,9 +37,15 @@ extension SongListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath)
-        cell.textLabel?.text = SongTitles[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath) as! SongTableViewCell
+        cell.songName.text = SongTitles[indexPath.row]
+        cell.artistName.text = ArtistName[indexPath.row]
         return cell
     }
     
+}
+
+class SongTableViewCell: UITableViewCell {
+    @IBOutlet weak var songName: UILabel!
+    @IBOutlet weak var artistName: UILabel!
 }
