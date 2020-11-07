@@ -1,0 +1,6 @@
+module Pods_Harper {
+  umbrella header "Pods-Harper-umbrella.h"
+
+  export *
+  module * { export * }
+}
