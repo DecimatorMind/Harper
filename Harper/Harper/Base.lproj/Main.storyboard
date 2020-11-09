@@ -195,16 +195,14 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Starboy" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aJk-HI-e5b">
                                 <rect key="frame" x="109" y="501" width="198" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Weeknd" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bzm-Fp-Mqu">
                                 <rect key="frame" x="108" y="539" width="198" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -248,7 +246,7 @@
                         <outlet property="PlayView" destination="pzB-mF-NWb" id="bQ1-1j-xRr"/>
                         <outlet property="Slider" destination="hjF-OS-uXG" id="6nB-fu-5fp"/>
                         <outlet property="Song_Title" destination="aJk-HI-e5b" id="U3X-fd-aww"/>
-                        <segue destination="HnA-c3-XRz" kind="presentation" identifier="ToListView" id="HWr-Rv-FVd"/>
+                        <segue destination="HnA-c3-XRz" kind="show" identifier="ToListView" id="HWr-Rv-FVd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YvM-9x-c8t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -302,6 +300,7 @@
                         <viewLayoutGuide key="safeArea" id="mgr-io-dqK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="48M-BZ-VW0"/>
                     <connections>
                         <outlet property="tableView" destination="H8H-CH-CjD" id="ow1-BZ-OIX"/>
                     </connections>
@@ -328,9 +327,6 @@
         <image name="Next" width="294.99700927734375" height="294.99700927734375"/>
         <image name="Play" width="294.84298706054688" height="294.84298706054688"/>
         <image name="TopBackgroundLayer" width="587" height="541"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
