@@ -9,6 +9,8 @@
 import UIKit
 import Firebase
 import AVFoundation
+import Realm
+import RealmSwift
 
 class MainViewController: UIViewController{
     @IBOutlet weak var Cover_Art: UIImageView!

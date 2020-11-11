@@ -5,5 +5,7 @@ target 'Harper' do
   # Pods for Harper
   
   pod 'Firebase/Auth'
+  pod 'RealmSwift', '~> 3.17', :modular_headers => true
+  pod 'Realm', '~> 3.17', :modular_headers => true
 
 end
