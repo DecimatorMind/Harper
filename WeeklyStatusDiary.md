@@ -38,4 +38,4 @@ This week we tried various APIs and tried to retrieve various sorts of data. But
 
 ## Week-9
 
-This week we tried using the method where we convert mp4 file to mp3 file, but there is no direct way to retrieve the mp4 video directly. Therefore we are looking for any other such method to show how we are expecting the application to work.
+This week we tried using the method where we convert mp4 file to mp3 file, but there is no direct way to retrieve the mp4 video directly. Therefore we are looking for any other such method to show how we are expecting the application to work. We have been planning to use firebase as our server. We are looking forward to a mechanism where we would create our own server that would return the mp3 file in request. But since that would take time, we will be still researching and working on the last module of the project.
