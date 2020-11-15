@@ -34,6 +34,8 @@ This week we started working on the connection to the Youtube API. Since the tim
 
 This week we tried various APIs and tried to retrieve various sorts of data. But we failed to achieve what we had expected. We have tried using multiple cocoapods and frameworks to easily retrieve any music file. But we fail to. Therefore we have been looking for various other ways that can be used to make for the shortcomings. One of the ways that we are researching to do was to convert the video to mp3 file, using basic conversion. But that would decrease the efficiency.
 
+# November
+
 ## Week-9
 
 This week we tried using the method where we convert mp4 file to mp3 file, but there is no direct way to retrieve the mp4 video directly. Therefore we are looking for any other such method to show how we are expecting the application to work.
