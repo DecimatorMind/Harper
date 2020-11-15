@@ -29,3 +29,11 @@ Starting the work on the Database (Backend) in order to achieve all functionalit
 ## Week-7
 
 This week we started working on the connection to the Youtube API. Since the time to the evaluation is less, therefore rather than connecting permanent database to the application, we first wanna do the basic functions of the application. The data must be received and stored in the application. The permanent storage is not much important at this stage of the application. Although a big part of application includes storing into backend local database, but that part can be easily done once all the data can be retrieved. The data can be soon easily structured and stored to the local storage.
+
+## Week-8
+
+This week we tried various APIs and tried to retrieve various sorts of data. But we failed to achieve what we had expected. We have tried using multiple cocoapods and frameworks to easily retrieve any music file. But we fail to. Therefore we have been looking for various other ways that can be used to make for the shortcomings. One of the ways that we are researching to do was to convert the video to mp3 file, using basic conversion. But that would decrease the efficiency.
+
+## Week-9
+
+This week we tried using the method where we convert mp4 file to mp3 file, but there is no direct way to retrieve the mp4 video directly. Therefore we are looking for any other such method to show how we are expecting the application to work.
