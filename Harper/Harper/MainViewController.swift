@@ -33,9 +33,9 @@ class MainViewController: UIViewController{
     
     var timer = Timer()
     
-    let ArtistName = ["Weeknd","Don Toliver","Travis Scott","Travis Scott"]
+    let ArtistName = ["Weeknd","Don Toliver","Travis Scott","Travis Scott","Pop Smoke"]
     
-    let SongTitles = ["Starboy","No Idea","Out West","Franchise"]
+    let SongTitles = ["Starboy","No Idea","Out West","Franchise","Out For The Night"]
     
     var Like = [0,1,0,1]
     
@@ -111,11 +111,11 @@ class MainViewController: UIViewController{
     }
     
     @IBAction func Next(_ sender: UIButton? = nil) {
-    
-        ReadyPlayer(temp: SongName[lastPlayedIndex + 1])
         
         if(lastPlayedIndex != SongName.count-1){
         
+            ReadyPlayer(temp: SongName[lastPlayedIndex + 1])
+            
             lastPlayedIndex += 1
             
             UpdateData()

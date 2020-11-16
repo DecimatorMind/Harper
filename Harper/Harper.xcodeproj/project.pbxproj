@@ -10,7 +10,7 @@
 		1027EB57251FC906006BFBC6 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027EB56251FC906006BFBC6 /* ListViewController.swift */; };
 		1039C085252104B10041050B /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1039C084252104B10041050B /* 1.mp3 */; };
 		10554E42250F71D700FB3B8F /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10554E41250F71D700FB3B8F /* RegistrationViewController.swift */; };
-		1063C2042508DC330007CC5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1063C2032508DC330007CC5C /* GoogleService-Info.plist */; };
+		107A28C825619B9E007AA67C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 107A28C725619B9E007AA67C /* GoogleService-Info.plist */; };
 		10A68AF02512144300419978 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A68AEF2512144300419978 /* MainViewController.swift */; };
 		10CBDC8A252C65BE00C4510B /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10CBDC89252C65BE00C4510B /* 2.mp3 */; };
 		10CBDC8D252C65C400C4510B /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10CBDC8C252C65C400C4510B /* 3.mp3 */; };
@@ -29,7 +29,7 @@
 		1027EB56251FC906006BFBC6 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		1039C084252104B10041050B /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
 		10554E41250F71D700FB3B8F /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
-		1063C2032508DC330007CC5C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		107A28C725619B9E007AA67C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		10A68AEF2512144300419978 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		10CBDC89252C65BE00C4510B /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2.mp3; sourceTree = "<group>"; };
 		10CBDC8C252C65C400C4510B /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3.mp3; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 				10DDEC3D2506318D00D12699 /* Assets.xcassets */,
 				10DDEC3F2506318D00D12699 /* LaunchScreen.storyboard */,
 				10DDEC422506318D00D12699 /* Info.plist */,
-				1063C2032508DC330007CC5C /* GoogleService-Info.plist */,
+				107A28C725619B9E007AA67C /* GoogleService-Info.plist */,
 				1039C088252104E80041050B /* Songs */,
 			);
 			path = Harper;
@@ -186,7 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10DDEC412506318D00D12699 /* LaunchScreen.storyboard in Resources */,
-				1063C2042508DC330007CC5C /* GoogleService-Info.plist in Resources */,
+				107A28C825619B9E007AA67C /* GoogleService-Info.plist in Resources */,
 				10CBDC90252C65D200C4510B /* 4.mp3 in Resources */,
 				10CBDC8A252C65BE00C4510B /* 2.mp3 in Resources */,
 				1039C085252104B10041050B /* 1.mp3 in Resources */,
