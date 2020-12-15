@@ -37,9 +37,9 @@ class MainViewController: UIViewController{
     
     let SongTitles = ["Starboy","No Idea","Out West","Franchise","Out For The Night"]
     
-    var Like = [0,1,0,1]
+    var Like = [0,1,0,1,0]
     
-    let SongName = ["1","2","3","4"]
+    let SongName = ["1","2","3","4","5"]
     
     var lastPlayedIndex = 0
     
